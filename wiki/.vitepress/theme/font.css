@@ -1,0 +1,17 @@
+/*
+@font-face {
+    font-family: 'mi-sans';
+    src: url('../../assets/MiSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'jetbarins-mono';
+    src: url('../../assets/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+
+:root {
+    --vp-font-family-base: 'mi-sans', 'system';
+    --vp-font-family-mono: 'jetbarins-mono','system';
+}
+*/

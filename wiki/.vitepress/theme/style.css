@@ -1,0 +1,49 @@
+.vp-button-light{
+    border-color: var(--vp-button-brand-border);
+    color: var(--vp-button-brand-text);
+    background-color: var(--vp-button-brand-bg);
+}
+
+.vp-button-light:hover{
+    border-color: var(--vp-button-brand-hover-border);
+    color: var(--vp-button-brand-hover-text);
+    background-color: var(--vp-button-brand-hover-bg);
+}
+
+.vp-button-light:active{
+    border-color: var(--vp-button-brand-active-border);
+    color: var(--vp-button-brand-active-text);
+    background-color: var(--vp-button-brand-active-bg);
+}
+
+.vp-button-normal{
+    border-color: var(--vp-button-brand-border);
+    color: var(--vp-button-alt-text);
+    background-color: var(--vp-button-alt-bg);
+}
+
+.vp-button-normal:hover{
+    border-color: var(--vp-button-brand-border);
+    color: var(--vp-button-alt-hover-text);
+    background-color: var(--vp-button-alt-hover-bg);
+}
+
+.vp-button-normal:active{
+    border-color: var(--vp-button-brand-border);
+    color: var(--vp-button-alt-active-text);
+    background-color: var(--vp-button-alt-active-bg);
+}
+
+.vp-button{
+    border-radius: 20px;
+    padding: 0 20px;
+    line-height: 38px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+    min-width: 100px;
+    margin-right: .5em;
+}
