@@ -12,7 +12,7 @@ import {DefaultTheme, defineConfig} from 'vitepress'
 const logo: string = './logo2.png';
 
 // @ts-ignore
-defineConfig({
+export default defineConfig({
     title: "ATCraftMC Dev Wiki",
     description: "ATCraftMC附属产品文档与开发者指南",
     lang: "zh-CN",
