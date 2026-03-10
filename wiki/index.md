@@ -16,14 +16,24 @@ hero:
         text: 反馈问题
         link: https://github.com/ATCraftMC
 features:
-  - title: 关于「星尘」插件
+  - title: 「星尘」插件
     icon: 🛠️
     details:
       服务器定制插件（原名quark-plugin）的使用信息和配置信息。<br><br>
       建议阅读人群：使用本插件的玩家及服务器管理员
       <div style="width:100%;padding-top:1em">
-      <a class="vp-button vp-button-light" style="width:100px" href="/quark/index">阅读</a>
+      <a class="vp-button vp-button-light" style="width:100px" href="/starlight">阅读</a>
       </div>
+  - title: MCUpdaterV2
+    icon: 💼
+    details:
+      一个简单的自动客户端更新服务。<br><br>
+      建议阅读人群：使用本系统的服务器管理员
+      <div style="width:100%;padding-top:1em">
+      <a class="vp-button vp-button-light" style="width:100px" href="/mc-updater">阅读</a>
+      </div>    
+
+
   - title: 其他项目
     icon: 🧷
     details:

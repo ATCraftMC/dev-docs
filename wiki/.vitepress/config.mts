@@ -54,6 +54,8 @@ function notFound(): DefaultTheme.NotFoundOptions {
 function nav(): DefaultTheme.NavItem[] {
     return [
         {text: '🏠主页', link: '/'},
+        {text: 'MC-Updater', link: '/mc-updater'},
+        {text: 'Starlight', link: '/starlight'},
         {text: '赞助', link: 'https://ifdian.net/a/TBSTmc'},
         {
             text: '更多', items: [
@@ -74,58 +76,43 @@ function footer(): DefaultTheme.Footer {
 
 function sidebar(): DefaultTheme.Sidebar {
     return {
-        '/starlight/': []
+        '/starlight/': side_starlight(),
+        '/mc-updater/': side_mcu()
     }
 }
 
-function sidebar_server(): DefaultTheme.SidebarItem[] {
+
+function side_mcu(): DefaultTheme.SidebarItem[] {
+    return [
+        {text: '概述', link: '/mc-updater/index'},
+        {text: '客户端', link: '/mc-updater/client'},
+        {text: '服务端', link: '/mc-updater/server'},
+        {text: '资源服务器', link: '/mc-updater/cdn'}
+    ]
+}
+
+function side_starlight(): DefaultTheme.SidebarItem[] {
     return [
         {
             text: '概览',
             items: [
-                {text: '关于服务器', link: '/server/about'},
-                {text: '常见问题', link: '/server/faqs'},
-                {text: '玩法介绍', link: '/server/functions'}
+                {text: '概述', link: '/starlight/index'},
+                {text: '更新日志', link: '/starlight/index/update'},
+                {text: '安装指南', link: '/starlight/index/install'},
+                {text: '兼容性', link: '/starlight/index/compatibility'}
             ]
         },
+
+
         {
-            text: '教程',
+            text: '附录',
             items: [
-                {text: '登录方式', link: '/server/course/login-method'},
-                {text: '客户端选择', link: '/server/course/clients'},
-                {text: '外置登录配置', link: '/server/course/launcher-config'},
-                {text: '模组服客户端', link: '/server/course/modded-clients'},
-                {text: '建筑技巧', link: '/server/course/build-tricks'},
-                {text: 'WE教程', link: '/server/course/worldedit-guide'}
-            ],
-            collapsed: false,
-        },
-        {
-            text: '规则',
-            items: [
-                {text: '服务器规定', link: '/server/rule/rules'},
-                {text: '惩罚措施', link: '/server/rule/punishments'}
-            ],
-            collapsed: false,
-        },
-        {
-            text: '更多信息',
-            items: [
-                // { text: '管理公示', link: '/operators' },
-                {text: '服务条款', link: '/server/other/terms-of-service'},
-                {text: '隐私政策', link: '/server/other/privacy-policy'},
-                {text: '商业合作', link: '/server/other/business'},
-                {text: '管理公示', link: '/server/other/operators'},
-                {text: '技术参考', link: '/server/other/technical-ref'}
-            ],
-            collapsed: false,
-        },
-        {
-            text: '其他',
-            items: [
-                {text: '梗百科', link: '/server/other/geng'},
-            ],
-            collapsed: false,
+                {text: '模块列表', link: '/starlight/addition/modules'},
+                {text: 'github介绍', link: '/starlight/addition/modrinth'},
+
+            ]
         }
     ]
 }
+
+
