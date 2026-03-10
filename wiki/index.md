@@ -2,9 +2,9 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 hero:
-  name: "ATCraft Wiki"
-  text: "ATCraft相关内容及服务器Wiki"
-  tagline: "ATCraftMC 总Wiki"
+  name: "ATCraftMC"
+  text: "产品文档与开发者指南"
+  tagline: "ATCraftMC附属产品文档与开发者指南"
   image:
   src: ./logo2.png
   alt: ATC
@@ -16,15 +16,6 @@ hero:
         text: 反馈问题
         link: https://github.com/ATCraftMC
 features:
-  - title: 关于 ATCraftMC 服务器
-    icon: <img src="http://localhost:5173/logo2.png" />
-    details:
-      关于服务器的说明，介绍和一些基本信息，可供玩家阅读并快速疑难解答。<br><br>
-      建议阅读人群：ATCraftMC服务器玩家
-      <div style="width:100%;padding-top:1em">
-      <a class="vp-button vp-button-light" href="/server/about.html">阅读</a>
-      <a class="vp-button vp-button-normal" href="/server/rule/rules">快速访问 | 服规</a>
-      </div>
   - title: 关于「星尘」插件
     icon: 🛠️
     details:
