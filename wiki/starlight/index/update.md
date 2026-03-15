@@ -1,5 +1,9 @@
 ## V5: Now - Gluon engine
 
+### 26.3.1
+
+- Added direction-until mode for EntityMotion.
+
 ### 26.3.0
 
 - Fixed component builder crashing issue(upstream:qlib-core)

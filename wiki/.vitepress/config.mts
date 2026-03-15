@@ -9,6 +9,8 @@
  */
 import {DefaultTheme, defineConfig} from 'vitepress'
 
+import {index} from './starlight-module-index.js'
+
 const logo: string = './logo2.png';
 
 // @ts-ignore
@@ -92,18 +94,27 @@ function side_mcu(): DefaultTheme.SidebarItem[] {
 }
 
 function side_starlight(): DefaultTheme.SidebarItem[] {
-    return [
+    let primary = [
         {
             text: '概览',
             items: [
                 {text: '概述', link: '/starlight/index'},
                 {text: '更新日志', link: '/starlight/index/update'},
                 {text: '安装指南', link: '/starlight/index/install'},
-                {text: '兼容性', link: '/starlight/index/compatibility'}
+                {text: '兼容性', link: '/starlight/index/compatibility'},
+                {text: '用户协议', link: '/starlight/index/eula'}
             ]
         },
-
-
+        {
+            text: '二次开发', items: [
+                {text: '数据包ID表', link: '/starlight/dev/pack-scheme-id'},
+                {text: '制作语言包', link: '/starlight/dev/make-language-pack'},
+                {text: '制作扩展包', link: '/starlight/dev/make-extension-pack'},
+                {text: '调整插件平台', link: '/starlight/dev/platform-injection'},
+                {text: '制作模块', link: '/starlight/dev/declare-module'},
+                {text: '制作服务', link: '/starlight/dev/declare-service'}
+            ]
+        },
         {
             text: '附录',
             items: [
@@ -112,7 +123,9 @@ function side_starlight(): DefaultTheme.SidebarItem[] {
 
             ]
         }
-    ]
+    ];
+
+    return primary.concat(index)
 }
 
 
