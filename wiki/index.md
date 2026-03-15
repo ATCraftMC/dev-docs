@@ -16,5 +16,8 @@ hero:
       text: Github
       link: https://github.com/ATCraftMC
 features:
-  - #别动，渲染被接管了
+  - icon: "?"
+    title: "更多文档?"
+    details: "请前往Github向我们反馈: https://github.com/ATCraftMC/dev-docs/issues"
+#别动这个，渲染被接管了，没它就渲染不来 草！
 ---
