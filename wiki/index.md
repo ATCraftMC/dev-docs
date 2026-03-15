@@ -6,42 +6,15 @@ hero:
   text: "产品文档与开发者指南"
   tagline: "ATCraftMC附属产品文档与开发者指南"
   image:
-  src: ./logo2.png
-  alt: ATC
+    src: ./logo2.png
+    alt: ATC
   actions:
-      - theme: brand
-        text: 快速开始
-        link: /server/about
-      - theme: alt
-        text: 反馈问题
-        link: https://github.com/ATCraftMC
+    - theme: brand
+      text: 官网
+      link: https://atcraftmc.cn
+    - theme: alt
+      text: Github
+      link: https://github.com/ATCraftMC
 features:
-  - title: 「星尘」插件
-    icon: 🛠️
-    details:
-      服务器定制插件（原名quark-plugin）的使用信息和配置信息。<br><br>
-      建议阅读人群：使用本插件的玩家及服务器管理员
-      <div style="width:100%;padding-top:1em">
-      <a class="vp-button vp-button-light" style="width:100px" href="/starlight">阅读</a>
-      </div>
-  - title: MCUpdaterV2
-    icon: 💼
-    details:
-      一个简单的自动客户端更新服务。<br><br>
-      建议阅读人群：使用本系统的服务器管理员
-      <div style="width:100%;padding-top:1em">
-      <a class="vp-button vp-button-light" style="width:100px" href="/mc-updater">阅读</a>
-      </div>    
-
-
-  - title: 其他项目
-    icon: 🧷
-    details:
-      ATCraftMC名下其他产品的说明文档。<br>
-       - OFManagerLite<br>
-       - MCUpdaterV2<br>
-       - Velocity-Modded<br>
-      <div style="width:100%;padding-top:1em">
-      <a class="vp-button vp-button-light" style="width:100px" href="/other/mcu/index">阅读</a>
-      </div>
+  - #别动，渲染被接管了
 ---
