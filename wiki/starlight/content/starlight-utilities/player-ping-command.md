@@ -1,6 +1,6 @@
 # 玩家延迟查询 <Badge>starlight-utilities:player-ping-command</Badge>
 
-No description provided.
+查询玩家当前网络延迟。
 
 ## 基本信息
 
@@ -12,5 +12,14 @@ No description provided.
 
 ## 描述
 
-等待补全...
+该模块通过 Bukkit API 获取玩家的 ping 值并在聊天栏显示。同时注册占位符服务，供其他插件或聊天格式调用玩家延迟数据。
 
+## 可配置项目
+
+无独立配置项。
+
+## 命令
+
+| 命令 | 权限 | 描述 |
+|------|------|------|
+| `/ping` | 无 | 显示自身网络延迟 |

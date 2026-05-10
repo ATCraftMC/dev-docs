@@ -1,7 +1,5 @@
 # 电梯方块 <Badge>starlight-oddities:elevator</Badge>
 
-Create a OpenBlock mod styled elevator block.
-
 ## 基本信息
 
 - 命名空间id: `starlight-oddities:elevator`
@@ -12,5 +10,8 @@ Create a OpenBlock mod styled elevator block.
 
 ## 描述
 
-等待补全...
+受 OpenBlocks 模组启发的电梯方块。玩家站在方块上跳跃可向上传送至同列上层电梯方块，潜行则向下传送至同列下层电梯方块，传送时伴有活塞音效。每个电梯方块上方需保留至少两格空气空间方可正常使用。
 
+## 可配置项目
+
+无独立配置项。

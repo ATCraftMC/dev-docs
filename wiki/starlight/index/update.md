@@ -1,8 +1,86 @@
 ## V5: Now - Gluon engine
 
-### 26.3.1
+### 26.5.1
+
+### 26.5.0
+
+- Fixed adventure exception on specific platform.
+- Fixed TaskManager init error on 1.21.11.
+- Fixed MOTD configuration covering issue.
+
+### 26.5.0 - snapshot-20260509
+
+- Fixed missing adventure API on non-paper env.
+- Fixed audience service on non-paper env.
+- Library list now use key order.
+- Actionbar title now support protocol-lib backend. 
+
+### 26.5.0 - snapshot-20260508
+
+- Added wg-extra data storage.
+- Added worldguard package as external.
+- Fixed formatting issue with null arguments.
+- Changed the color of worldguard HUD.
+- Fixed task-register error on reloading.
+- Use hikari-cp to optimize database performance.
+- Supported most of DB.(library loading WIP)
+- Fixed UI dismount issue on player death.
+- Added End-Map-Protect.
+- Rejected package will no longer be registered.
+- Fixed motd image cover issue.
+- More text now supported bungee format.
+- Optimized text pipeline.
+- Added more translations.
+
+### 26.4.3
+
+- Added default-state function.
+- Fixed UI task error when player unexpectedly quit.
+- Added Box-Outline command for WorldEditCommands
+- Fixed Region-Get NPE in Worldguard-WE-Check.
+- Added package `starlight-lobby`:
+    - Added `lobby-back-to-spawn`
+    - Added `lobby-default-inventory`
+    - Added `lobby-map-protect`
+    - Added `lobby-player-protect`
+- Rejected package will no longer be registered.
+- Fixed motd image cover issue.
+- More text now supported bungee format.
+
+### 26.4.2
+
+> Minecraft 26.1 support is WIP.
+
+- Fixed formatting issue in remained modules.
+- Added sound-mount mode toggle.
+- Fixed stack-over-flow error by multi-reloading.
+
+### 26.4.1
+
+- Fixed chat cover toggle error for ChatFilter.
+- Fixed client time send error with protocol[1.21.11]
+- Fixed scoreboard async issue.
+- Fixed scoreboard multi-create issue.
+- Fixed scoreboard render task on player quit.
+- Improved Log behavior.
+- Fixed formatting issue in remained modules.
+
+### 26.4.0
+
+> **IMPORTANT :**<br>
+> Note that due to text pipeline update,
+> all `%s` in lang files are moved to `{}`.<br>
+> Legacy var converter are auto remapped, but you
+> **HAVE TO** manually update them in your modified files.
 
 - Added direction-until mode for EntityMotion.
+- updated qlib v1.0.6->v1.0.8
+- Added language integration for PAPI extension.
+- Added full vars integration for PAPI extension.
+- Added parse-command option(default:false) for ChatComponents.
+- Fixed most un-translated color chars in message system.
+- Fixed version tracking.
+- Fixed crashing on double reloading.
 
 ### 26.3.0
 
@@ -17,7 +95,7 @@
 - Added WorldGuardClaimCommand.
 - Added WorldGuardWECheck.
 - Added PlayerViewCustomization to let player customize their UI.
-- Added descriptions to more modules. 
+- Added descriptions to more modules.
 
 ### Velocity-26.1.0
 
@@ -179,6 +257,7 @@
 - [fix] MusicPlayer: fixed fetching issue.
 - [fix] Framework: fix stats page display.
 -->
+
 ### 0.64.15
 
 - [upd] Framework: hot reload on all platforms are sync now.
@@ -202,8 +281,6 @@
 - fix view-distance calc exception when player died
 - fix we-selection-limit issue when not complete
 - fix player-join data loading issue[1.20.1]
-
-
 
 ### 0.64.13
 

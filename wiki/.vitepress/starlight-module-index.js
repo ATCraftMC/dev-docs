@@ -15,20 +15,20 @@ export const index = [
                 "link": "/starlight/content/starlight-commands/item-command"
             },
             {
-                "text": "WorldEdit指令补充",
-                "link": "/starlight/content/starlight-commands/world-edit-commands"
-            },
-            {
                 "text": "戴帽子",
                 "link": "/starlight/content/starlight-commands/hat"
             },
             {
-                "text": "实体动量指令",
-                "link": "/starlight/content/starlight-commands/entity-motion"
-            },
-            {
                 "text": "方块动画",
                 "link": "/starlight/content/starlight-commands/animate-block-command"
+            },
+            {
+                "text": "WorldEdit指令补充",
+                "link": "/starlight/content/starlight-commands/world-edit-commands"
+            },
+            {
+                "text": "实体动量指令",
+                "link": "/starlight/content/starlight-commands/entity-motion"
             },
             {
                 "text": "指令补全过滤修复",
@@ -61,12 +61,20 @@ export const index = [
         "text": "starlight-security",
         "items": [
             {
-                "text": "额外权限控制",
-                "link": "/starlight/content/starlight-security/advanced-permission-control"
-            },
-            {
                 "text": "WorldEdit操作监测",
                 "link": "/starlight/content/starlight-security/we-operation-defender"
+            },
+            {
+                "text": "IP地址检测",
+                "link": "/starlight/content/starlight-security/ip-defender"
+            },
+            {
+                "text": "爆炸防护",
+                "link": "/starlight/content/starlight-security/explosion-defender"
+            },
+            {
+                "text": "额外权限控制",
+                "link": "/starlight/content/starlight-security/advanced-permission-control"
             },
             {
                 "text": "访客模式",
@@ -77,12 +85,8 @@ export const index = [
                 "link": "/starlight/content/starlight-security/img-regulation-sync"
             },
             {
-                "text": "IP地址检测",
-                "link": "/starlight/content/starlight-security/ip-defender"
-            },
-            {
-                "text": "爆炸防护",
-                "link": "/starlight/content/starlight-security/explosion-defender"
+                "text": "end-protect",
+                "link": "/starlight/content/starlight-security/end-protect"
             },
             {
                 "text": "简易权限控制",
@@ -103,32 +107,16 @@ export const index = [
         "text": "starlight-tweaks",
         "items": [
             {
-                "text": "作物采集",
-                "link": "/starlight/content/starlight-tweaks/crop-click-harvest"
-            },
-            {
                 "text": "骑你头上",
                 "link": "/starlight/content/starlight-tweaks/sit-on-player"
-            },
-            {
-                "text": "双开门同步",
-                "link": "/starlight/content/starlight-tweaks/double-door-sync"
             },
             {
                 "text": "手持工作方块",
                 "link": "/starlight/content/starlight-tweaks/portable-functional-blocks"
             },
             {
-                "text": "发射器交互修改",
-                "link": "/starlight/content/starlight-tweaks/dispenser-interaction"
-            },
-            {
                 "text": "楼梯椅子",
                 "link": "/starlight/content/starlight-tweaks/stair-seat"
-            },
-            {
-                "text": "真实睡眠",
-                "link": "/starlight/content/starlight-tweaks/realistic-sleep"
             },
             {
                 "text": "快速打开潜影盒",
@@ -137,6 +125,22 @@ export const index = [
             {
                 "text": "真实矿车",
                 "link": "/starlight/content/starlight-tweaks/realistic-minecart"
+            },
+            {
+                "text": "作物采集",
+                "link": "/starlight/content/starlight-tweaks/crop-click-harvest"
+            },
+            {
+                "text": "双开门同步",
+                "link": "/starlight/content/starlight-tweaks/double-door-sync"
+            },
+            {
+                "text": "发射器交互修改",
+                "link": "/starlight/content/starlight-tweaks/dispenser-interaction"
+            },
+            {
+                "text": "真实睡眠",
+                "link": "/starlight/content/starlight-tweaks/realistic-sleep"
             },
             {
                 "text": "连锁采集",
@@ -152,6 +156,14 @@ export const index = [
         "text": "starlight-proxy",
         "items": [
             {
+                "text": "集群聊天同步",
+                "link": "/starlight/content/starlight-proxy/chat-sync"
+            },
+            {
+                "text": "集群Ping指标修正",
+                "link": "/starlight/content/starlight-proxy/proxy-ping"
+            },
+            {
                 "text": "Geyser皮肤重映射",
                 "link": "/starlight/content/starlight-proxy/geyser-skin-redirect"
             },
@@ -160,16 +172,8 @@ export const index = [
                 "link": "/starlight/content/starlight-proxy/legacy-forwarding-protect"
             },
             {
-                "text": "集群聊天同步",
-                "link": "/starlight/content/starlight-proxy/chat-sync"
-            },
-            {
                 "text": "客户端跳转mod支持",
                 "link": "/starlight/content/starlight-proxy/client-transfer-support"
-            },
-            {
-                "text": "集群Ping指标修正",
-                "link": "/starlight/content/starlight-proxy/proxy-ping"
             }
         ]
     },
@@ -190,22 +194,22 @@ export const index = [
         "text": "starlight-sideload",
         "items": [
             {
+                "text": "inventory-menu",
+                "link": "/starlight/content/starlight-sideload/inventory-menu"
+            },
+            {
                 "text": "recipe-loader",
                 "link": "/starlight/content/starlight-sideload/recipe-loader"
             },
             {
-                "text": "inventory-menu",
-                "link": "/starlight/content/starlight-sideload/inventory-menu"
+                "text": "resource-pack-loader",
+                "link": "/starlight/content/starlight-sideload/resource-pack-loader"
             }
         ]
     },
     {
         "text": "starlight-display",
         "items": [
-            {
-                "text": "聊天行格式化",
-                "link": "/starlight/content/starlight-display/chat-format"
-            },
             {
                 "text": "玩家头衔",
                 "link": "/starlight/content/starlight-display/player-name-header"
@@ -219,12 +223,24 @@ export const index = [
                 "link": "/starlight/content/starlight-display/drop-item-info"
             },
             {
-                "text": "挂机检测",
-                "link": "/starlight/content/starlight-display/afk"
-            },
-            {
                 "text": "自定义计分板提示信息",
                 "link": "/starlight/content/starlight-display/custom-scoreboard"
+            },
+            {
+                "text": "TAB栏提示信息",
+                "link": "/starlight/content/starlight-display/tab-menu"
+            },
+            {
+                "text": "聊天栏公告",
+                "link": "/starlight/content/starlight-display/chat-announce"
+            },
+            {
+                "text": "聊天行格式化",
+                "link": "/starlight/content/starlight-display/chat-format"
+            },
+            {
+                "text": "挂机检测",
+                "link": "/starlight/content/starlight-display/afk"
             },
             {
                 "text": "自定义MOTD信息",
@@ -249,14 +265,6 @@ export const index = [
             {
                 "text": "快捷栏HUD信息显示",
                 "link": "/starlight/content/starlight-display/action-bar-hud"
-            },
-            {
-                "text": "TAB栏提示信息",
-                "link": "/starlight/content/starlight-display/tab-menu"
-            },
-            {
-                "text": "聊天栏公告",
-                "link": "/starlight/content/starlight-display/chat-announce"
             }
         ]
     },
@@ -272,10 +280,6 @@ export const index = [
                 "link": "/starlight/content/starlight-utilities/tick-manager"
             },
             {
-                "text": "计算器",
-                "link": "/starlight/content/starlight-utilities/calculator"
-            },
-            {
                 "text": "自由视角",
                 "link": "/starlight/content/starlight-utilities/freecam"
             },
@@ -288,20 +292,16 @@ export const index = [
                 "link": "/starlight/content/starlight-utilities/block-update-locker"
             },
             {
-                "text": "菜单物品触发器",
-                "link": "/starlight/content/starlight-utilities/menu-item"
-            },
-            {
                 "text": "粒子文本绘制",
                 "link": "/starlight/content/starlight-utilities/particle-font"
             },
             {
-                "text": "客户端环境设置",
-                "link": "/starlight/content/starlight-utilities/client-environment-setting"
+                "text": "菜单物品触发器",
+                "link": "/starlight/content/starlight-utilities/menu-item"
             },
             {
-                "text": "环境方块刷新",
-                "link": "/starlight/content/starlight-utilities/surrounding-refresh"
+                "text": "客户端环境设置",
+                "link": "/starlight/content/starlight-utilities/client-environment-setting"
             },
             {
                 "text": "位置锁定指令",
@@ -310,6 +310,18 @@ export const index = [
             {
                 "text": "inventory-profile",
                 "link": "/starlight/content/starlight-utilities/inventory-profile"
+            },
+            {
+                "text": "自定义渲染距离",
+                "link": "/starlight/content/starlight-utilities/dynamic-view-distance"
+            },
+            {
+                "text": "计算器",
+                "link": "/starlight/content/starlight-utilities/calculator"
+            },
+            {
+                "text": "环境方块刷新",
+                "link": "/starlight/content/starlight-utilities/surrounding-refresh"
             },
             {
                 "text": "自定义相机路径",
@@ -322,10 +334,6 @@ export const index = [
             {
                 "text": "玩家延迟查询",
                 "link": "/starlight/content/starlight-utilities/player-ping-command"
-            },
-            {
-                "text": "自定义渲染距离",
-                "link": "/starlight/content/starlight-utilities/dynamic-view-distance"
             },
             {
                 "text": "位置对齐指令",
@@ -341,20 +349,8 @@ export const index = [
                 "link": "/starlight/content/starlight-management/maintenance"
             },
             {
-                "text": "自动化垃圾清理",
-                "link": "/starlight/content/starlight-management/vm-garbage-cleaner"
-            },
-            {
                 "text": "聊天举报",
                 "link": "/starlight/content/starlight-management/chat-report"
-            },
-            {
-                "text": "命令行插件管理器",
-                "link": "/starlight/content/starlight-management/plugin-manager-command"
-            },
-            {
-                "text": "屏蔽词",
-                "link": "/starlight/content/starlight-management/chat-filter"
             },
             {
                 "text": "封禁指令",
@@ -373,6 +369,18 @@ export const index = [
                 "link": "/starlight/content/starlight-management/kick-on-reload"
             },
             {
+                "text": "自动化垃圾清理",
+                "link": "/starlight/content/starlight-management/vm-garbage-cleaner"
+            },
+            {
+                "text": "命令行插件管理器",
+                "link": "/starlight/content/starlight-management/plugin-manager-command"
+            },
+            {
+                "text": "屏蔽词",
+                "link": "/starlight/content/starlight-management/chat-filter"
+            },
+            {
                 "text": "TPS可视化条",
                 "link": "/starlight/content/starlight-management/tps-bar"
             }
@@ -382,16 +390,16 @@ export const index = [
         "text": "starlight-console",
         "items": [
             {
+                "text": "[BETA]自定义日志格式",
+                "link": "/starlight/content/starlight-console/custom-log-format"
+            },
+            {
                 "text": "停服确认",
                 "link": "/starlight/content/starlight-console/stop-confirm"
             },
             {
                 "text": "控制台代理执行",
                 "link": "/starlight/content/starlight-console/console-execute"
-            },
-            {
-                "text": "[BETA]自定义日志格式",
-                "link": "/starlight/content/starlight-console/custom-log-format"
             },
             {
                 "text": "[BETA]日志颜色修复",
@@ -407,20 +415,32 @@ export const index = [
         "text": "starlight-core",
         "items": [
             {
-                "text": "[核心]安装完整性检查",
-                "link": "/starlight/content/starlight-core/installation-check"
-            },
-            {
-                "text": "[核心]Modrinth更新服务",
-                "link": "/starlight/content/starlight-core/modrinth-version-check"
-            },
-            {
                 "text": "[核心]自定义插件语言加载器",
                 "link": "/starlight/content/starlight-core/custom-language-pack-loader"
             },
             {
                 "text": "[核心]PlaceHolderAPI交互支持",
                 "link": "/starlight/content/starlight-core/papi-support"
+            },
+            {
+                "text": "example-2",
+                "link": "/starlight/content/starlight-core/example-2"
+            },
+            {
+                "text": "example-1",
+                "link": "/starlight/content/starlight-core/example-1"
+            },
+            {
+                "text": "[核心]玩家界面自定义 ",
+                "link": "/starlight/content/starlight-core/player-view-customization"
+            },
+            {
+                "text": "[核心]安装完整性检查",
+                "link": "/starlight/content/starlight-core/installation-check"
+            },
+            {
+                "text": "[核心]Modrinth更新服务",
+                "link": "/starlight/content/starlight-core/modrinth-version-check"
             },
             {
                 "text": "[核心]平台差异补丁",
@@ -433,10 +453,27 @@ export const index = [
             {
                 "text": "[核心]更新日志查看器",
                 "link": "/starlight/content/starlight-core/version-log-viewer"
+            }
+        ]
+    },
+    {
+        "text": "starlight-worldguard",
+        "items": [
+            {
+                "text": "wg-region-hud",
+                "link": "/starlight/content/starlight-worldguard/wg-region-hud"
             },
             {
-                "text": "[核心]玩家界面自定义",
-                "link": "/starlight/content/starlight-core/player-view-customization"
+                "text": "wg-custom-name",
+                "link": "/starlight/content/starlight-worldguard/wg-custom-name"
+            },
+            {
+                "text": "wg-we-check",
+                "link": "/starlight/content/starlight-worldguard/wg-we-check"
+            },
+            {
+                "text": "wg-claim",
+                "link": "/starlight/content/starlight-worldguard/wg-claim"
             }
         ]
     },

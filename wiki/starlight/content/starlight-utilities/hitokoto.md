@@ -1,6 +1,6 @@
 # 「一言」 <Badge>starlight-utilities:hitokoto</Badge>
 
-No description provided.
+从「一言」API 获取并展示随机语句。
 
 ## 基本信息
 
@@ -12,5 +12,14 @@ No description provided.
 
 ## 描述
 
-等待补全...
+该模块通过 HTTP 请求调用 `v1.hitokoto.cn` 接口异步获取随机「一言」句子，并在游戏中展示句子内容、作者及出处。为玩家提供轻松有趣的互动体验。
 
+## 可配置项目
+
+无独立配置项。
+
+## 命令
+
+| 命令 | 权限 | 描述 |
+|------|------|------|
+| `/hitokoto` | 无 | 获取随机「一言」句子 |

@@ -1,6 +1,6 @@
 # 屏蔽词 <Badge>starlight-management:chat-filter</Badge>
 
-屏蔽玩家聊天和告示牌中的脏话以及可能导致腐竹被请去喝茶的鉴证信息。
+过滤玩家聊天、告示牌、铁砧重命名中的敏感词，支持举报联动自动惩罚。
 
 ## 基本信息
 
@@ -10,41 +10,23 @@
 - 是否默认开启: `是`
 - 是否为未完成[beta]阶段: `否`
 
-## 屏蔽词规则模式
+## 描述
 
-屏蔽词规则文件统一存放在`starlight/config/chat-filter-rules`中，为单独成组配置格式。
-屏蔽词系统现在支持两种格式导入:
+ChatFilter 模块使用 Aho-Corasick 算法和正则表达式对玩家消息进行敏感词匹配与替换。支持过滤聊天消息、特定命令（如`/say`、`/tell`、`/mail`）、告示牌文本和铁砧重命名。可配置是否遮盖敏感词、排除玩家名、是否自动惩罚违规玩家。与 ChatReport 联动，被举报且命中过滤的玩家将自动执行惩罚命令。
 
-### 换行符配置格式
+## 可配置项目
 
-#开头为注释，其他格式正常，每行为一个片段（默认输入tire树，也可插入**单行**正则表达式，会单独提取为独立pattern
+| 配置项 | 类型 | 默认值 | 描述 |
+|--------|------|--------|------|
+| `chat-filter.filter-sign` | Boolean | `true` | 是否过滤告示牌内容 |
+| `chat-filter.filter-anvil` | Boolean | `true` | 是否过滤铁砧重命名内容 |
+| `chat-filter.except-player` | Boolean | `true` | 是否排除玩家名（不检测玩家名中的敏感词） |
+| `chat-filter.cover` | Boolean | `true` | 是否用替代字符遮盖敏感词，关闭则仅检测不替换 |
+| `chat-filter.cover-char` | String | `*` | 用于遮盖敏感词的字符 |
+| `chat-filter.handled-commands` | List | `[say, tell, mail]` | 需要过滤内容的命令列表 |
+| `chat-filter.punish` | Boolean | `true` | 是否对违规玩家执行惩罚 |
+| `chat-filter.punish-command` | String | `mute {player} 3600 ...` | 惩罚命令模板，`{player}`将被替换为玩家名 |
 
-```text
-# 这里是一些注释内容，不会读取
-去你大爷 # 这里左边就是正式内容了
-你他妈的
-```
+## 命令
 
-### Json配置格式
-
-熟悉吗？就是TrChat的格式，我看起来好用就拿走了
-Json是不支持关键词插入正则表达式的，暂时给各位道个歉 :(
-
-```json
-{
-  "lastUpdateDate": "2025/07/25",
-  "words": ["去你大爷"]
-  //就这样写下去吧
-}
-```
-
-## 数值配置文件
-
-参考数值配置文件模板(starlight-managements.template.yml)
-
-## 屏蔽词预设词库免责声明
-
-- 预设屏蔽词库内容为网络数据收集总结而成，均按照对应协议提供。
-- 预设词库中的内容不代表本插件作者任何观点，仅供屏蔽查询使用。
-- 发布或以任何形式公开预设词库导致触犯相关法律法规的，我方**概不负责**。
-
+本模块无独立命令。
