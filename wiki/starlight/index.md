@@ -2,7 +2,7 @@
 
 <img alt="logo" width="160" style="border-radius: 1rem" src="https://raw.githubusercontent.com/Grass-block/Starlight/refs/heads/main/starlight-logo.png">
 
-<h2 align="center">Starlight -「星辰」<Badge>v26.3.1</Badge></h2>
+<h2 align="center">Starlight -「星辰」<Badge>v26.6.0</Badge></h2>
 
 一个采用“原子化（Atomic）设计”的服务器插件，旨在覆盖服务器所需的一切功能。
 
